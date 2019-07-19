@@ -1,0 +1,11 @@
+<h1>Hello, this is the index page where all your seas will be shown.</h1>
+
+<%= link_to "Make your seas here", new_sea_path %>
+
+<ul>
+    <% @seas.each do |sea| %>
+        <li>
+            <%= link_to sea.name, sea %>
+        </li>
+    <% end %>
+</ul>

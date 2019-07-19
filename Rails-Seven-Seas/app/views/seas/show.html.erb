@@ -1,0 +1,39 @@
+<h1>Show</h1>
+
+<%= link_to "All the Seas in the World", seas_path %>
+<%= link_to "Edit this Sea", edit_sea_path(@sea) %>
+
+<%= button_to "Move this sea to another planet", sea_path(@sea), method: :delete %>
+
+<p>
+  <%= @sea.name %>
+</p>
+
+<p>
+  <%= @sea.temperature %>
+</p>
+
+<p>
+  <%= @sea.bio %>
+</p>
+
+<p>
+  <%= @sea.image_url %>
+</p>
+
+<p>
+  <%= @sea.mood %>
+</p>
+
+<p>
+  <%= @sea.favorite_color %>
+</p>
+
+<p>
+  <%= @sea.scariest_creature %>
+</p>
+
+<p>
+  <%= @sea.has_mermaids %>
+</p>
+
